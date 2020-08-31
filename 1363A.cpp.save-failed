@@ -1,0 +1,54 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,x;
+        cin>>n>>x;
+        vector<int>o;
+        vector<int>e;
+        for(int i=0; i<n; i++)
+        {
+            int a;
+            cin>>a;
+            if(a%2)
+            {
+                o.push_back(a);
+            }
+            else
+                e.push_back(a);
+        }
+        if(o.size()>=k)
+        {
+            if(k%2)
+            {
+                cout<<"YES\n";
+            }
+            else if(e.size()!=0)
+            {
+                cout<<"YES\n";
+            }
+            else
+                cout<<"NO\n";
+        }
+        else
+        {
+            if(o.size()%2)
+            {
+
+                cout<<"YES\n";
+            }
+            else
+            {
+                cout<<"NO\n";
+            }
+        }
+
+    }
+    return 0;
+}
+
